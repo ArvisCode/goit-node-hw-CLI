@@ -47,4 +47,6 @@ async function invokeAction({ action, id, name, email, phone }) {
 
 console.log("\n \x1b[35m ==> -- Next start -- <== \n \x1b[0m");
 
-invokeAction(argv);
+(async () => {
+  invokeAction(argv);
+})();
